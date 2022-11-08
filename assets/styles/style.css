@@ -5,11 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-
 }
-
-
 
 ::selection {
     background-color: #5f81ad;
@@ -17,7 +13,8 @@
 
 span::selection,
 button::selection,
-h2::selection {
+h2::selection,
+#contact .contact-me p::selection {
     background-color: white;
 }
 
@@ -27,6 +24,14 @@ section {
     color: #fff;
     background-color: rgb(5, 12, 41);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #5f81ad;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5px;
 }
 
 /* End General Setting */
@@ -62,20 +67,12 @@ section {
     display: inline-block;
     font-size: 2rem;
     transition: 1.5s;
-    -webkit-transition: 1.5s;
-    -moz-transition: 1.5s;
-    -ms-transition: 1.5s;
-    -o-transition: 1.5s;
     text-align: center;
 }
 
 .navbar .logo a {
     color: #5f81ad;
     transition: 1.5s;
-    -webkit-transition: 1.5s;
-    -moz-transition: 1.5s;
-    -ms-transition: 1.5s;
-    -o-transition: 1.5s;
     height: 3rem;
     width: 3rem;
     line-height: .7;
@@ -86,6 +83,10 @@ section {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     padding-bottom: 1rem;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
 }
 
 /* Navbar logo on mouse-over */
@@ -170,8 +171,6 @@ section {
     margin-top: -2rem;
     padding-left: 0.5rem;
     color: #5f81ad;
-
-
 }
 
 #hero p {
@@ -193,15 +192,8 @@ section {
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
-    font-weight: 800;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2.5px;
-    -webkit-border-radius: px;
     transition: 1.5s;
-    -webkit-transition: 1.5s;
-    -moz-transition: 1.5s;
-    -ms-transition: 1.5s;
-    -o-transition: 1.5s;
+
 }
 
 #hero button:hover,
@@ -220,11 +212,11 @@ section {
 #about {
     position: relative;
     height: 100vh;
-
 }
 
 #about h2,
-#works h2 {
+#works h2,
+#contact h2 {
     text-align: center;
     padding: 2.8rem;
     font-weight: 500;
@@ -259,15 +251,10 @@ section {
     border-bottom-right-radius: 12rem;
     box-shadow: 0px 8px 15px #5f81ad;
     transition: 1.5s;
-    -webkit-transition: 1.5s;
-    -moz-transition: 1.5s;
-    -ms-transition: 1.5s;
-    -o-transition: 1.5s;
 }
 
 #about .inner .about-text:hover {
     box-shadow: none;
-
 }
 
 #about .inner .about-text span {
@@ -298,17 +285,12 @@ section {
     height: 100%;
     opacity: 0.6;
     transition: 1.5s;
-    -webkit-transition: 1.5s;
-    -moz-transition: 1.5s;
-    -ms-transition: 1.5s;
-    -o-transition: 1.5s;
+
 }
 
 #about .about-pic .wrapper .image img:hover,
 #about .about-pic .wrapper .image:hover {
-
     opacity: 0.9;
-
 
 }
 
@@ -338,17 +320,11 @@ section {
     -ms-border-radius: 3rem;
     -o-border-radius: 3rem;
     transition: 1.5s;
-    -webkit-transition: 1.5s;
-    -moz-transition: 1.5s;
-    -ms-transition: 1.5s;
-    -o-transition: 1.5s;
     position: relative;
-
 }
 
 #works .featureWorks .container:hover {
     margin-top: -1rem;
-
 }
 
 #works .featureWorks div img {
@@ -366,7 +342,6 @@ section {
 #works .featureWorks .container:hover .github {
     display: inline-block;
 }
-
 
 .github {
     display: none;
@@ -481,34 +456,172 @@ section {
     border-top-left-radius: 4rem;
     border-left: rgb(5, 12, 41) 2px solid;
     border-bottom: rgb(5, 12, 41) 2px solid;
-
-
 }
 
 /* end overlay */
 /* End work section */
-@media screen and (max-width: 400px) {
-
-    #works .featureWorks .container .text {
-
-        line-height: 1;
-        font-size: .3rem;
-
-        flex-direction: row;
-        display: flex;
-    }
-
-    #works .featureWorks .container .text h3 {
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    #works .featureWorks .container .text p {
-        width: 100%;
-        font-size: 1rem;
-    }
+/* Start Contact section */
+#contact {
+    height: 100vh;
 }
 
+#contact .contact-wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    height: 70vh;
+}
+
+#contact .form {
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+form {
+    width: 100%;
+}
+
+#contact form .inputWrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem;
+}
+
+#contact [type]:focus,
+#contact textarea:focus {
+    outline: 1px solid #5f81ad;
+}
+
+#contact #name {
+    width: 45%
+}
+
+#contact #email {
+    width: 54%;
+}
+
+#contact [type],
+#contact textarea {
+
+    display: inline-block;
+    background-color: rgb(5, 12, 41);
+    display: inline-block;
+    margin-bottom: 1rem;
+    background-color: rgb(5, 12, 41);
+    border: 1px #5f81ad solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    color: #fff;
+    letter-spacing: 1px;
+    width: 50%;
+}
+
+#contact textarea {
+    display: block;
+    height: 60%;
+    width: 90%;
+}
+
+#contact #btn {
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    width: 90%;
+}
+
+#contact button i {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#contact button :hover,
+#contact button :focus {
+    transition: 1s;
+    font-size: 1.2rem;
+    color: #5f81ad;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+#contact .labels {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact label {
+    display: inline-block;
+    width: 50%;
+    font-size: 1.5rem;
+    margin-left: .8rem;
+    color: #5f81ad;
+    cursor: text;
+}
+
+#contact .labels .email {
+    margin-left: -1.7rem;
+}
+
+#contact .labels .name {
+    margin-left: 1.5rem;
+}
+
+#contact .contact-me {
+    color: #5f81ad;
+    display: flex;
+    align-items: center;
+}
+
+#contact .contact-me i {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 2rem;
+    margin-right: .9rem;
+
+}
+
+#contact .contact-me p {
+    font-size: 1.4rem;
+}
+
+#contact h3 {
+    color: #5f81ad;
+    padding: 2rem;
+    background-color: rgb(5, 12, 41);
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 6rem;
+    border-left: 6px solid #5f81ad;
+    border-bottom: 4px solid #5f81ad;
+    margin-top: 3rem;
+    width: 72%;
+    font-size: 2rem;
+    border-bottom-left-radius: .5rem;
+    margin-left: 1rem;
+}
+
+#contact .contact-me :hover i {
+    color: red;
+}
+
+/* End Contact section */
 @media screen and (max-width: 500px) {
     #about .inner {
         flex-direction: column;
@@ -519,12 +632,10 @@ section {
         width: 100%;
         height: 70%;
         font-size: .7rem;
-
     }
 
     #about .about-pic:hover {
         margin-top: 1.2rem;
-
     }
 
     #about .about-pic {
@@ -566,16 +677,26 @@ section {
     }
 
     #works .featureWorks .container .text {
-
         line-height: 1.5;
         font-size: 1rem;
         flex-direction: column;
         display: flex;
     }
 
+    #contact .contact-wrapper {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        height: 70vh;
+        flex-direction: column;
+    }
 
+    #contact .form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
 }
-
 
 @media screen and (max-width: 760px) {
     #about .inner {
@@ -587,12 +708,10 @@ section {
         width: 100%;
         height: 70%;
         font-size: .7rem;
-
     }
 
     #about .about-pic:hover {
         margin-top: 1.2rem;
-
     }
 
     #about .about-pic {
@@ -621,13 +740,26 @@ section {
     }
 
     #works .featureWorks .container .text {
-
         line-height: 1.5;
         font-size: 1rem;
         flex-direction: column;
         display: flex;
     }
 
+    #contact .contact-wrapper {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        height: 70vh;
+        flex-direction: column;
+    }
+
+    #contact .form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -640,12 +772,10 @@ section {
         width: 100%;
         height: 70%;
         font-size: .7rem;
-
     }
 
     #about .about-pic:hover {
         margin-top: 1.2rem;
-
     }
 
     #about .about-pic {
@@ -674,11 +804,25 @@ section {
     }
 
     #works .featureWorks .container .text {
-
         line-height: 1.5;
         font-size: 1.1rem;
         flex-direction: column;
         display: flex;
     }
 
+    #contact .contact-me p {
+        width: 100%;
+    }
+
+    #contact .contact-wrapper {
+        width: 90%;
+    }
+
+    #contact .location {
+        margin: 3.9rem;
+    }
+
+    #contact {
+        height: 150vh;
+    }
 }
