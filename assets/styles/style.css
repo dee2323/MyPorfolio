@@ -7,6 +7,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body {
+    background-color: rgb(5, 12, 41);
+}
+
 ::selection {
     background-color: #5f81ad;
 }
@@ -549,11 +553,12 @@ form {
 #contact button i {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 200%;
+    background: transparent;
 }
 
-#contact button :hover,
-#contact button :focus {
+#contact #btn :hover,
+#contact #btn :focus {
     transition: 1s;
     font-size: 1.2rem;
     color: #5f81ad;
@@ -613,14 +618,10 @@ form {
     border-left: 6px solid #5f81ad;
     border-bottom: 4px solid #5f81ad;
     margin-top: 3rem;
-    width: 72%;
+    width: 74%;
     font-size: 2rem;
     border-bottom-left-radius: .5rem;
     margin-left: 1rem;
-}
-
-#contact .contact-me :hover i {
-    color: red;
 }
 
 /* End Contact section */
@@ -725,7 +726,7 @@ footer p {
     }
 
     #works {
-        height: 350vh;
+        height: auto;
     }
 
     #works .featureWorks {
@@ -745,11 +746,15 @@ footer p {
         display: flex;
     }
 
+    #contact h2 {
+        margin-left: -1.5rem;
+    }
+
     #contact .contact-wrapper {
         width: 80%;
         margin: auto;
         display: flex;
-        height: 70vh;
+        /* height: 70vh; */
         flex-direction: column;
     }
 
@@ -758,9 +763,17 @@ footer p {
         height: 100%;
         display: flex;
     }
+
+    #contact .location h3 {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 760px) {
+    #about {
+        height: auto;
+    }
+
     #about .inner {
         flex-direction: column;
         align-items: center;
@@ -768,7 +781,6 @@ footer p {
 
     #about .inner .about-text {
         width: 100%;
-        height: 70%;
         font-size: .7rem;
     }
 
@@ -778,7 +790,7 @@ footer p {
 
     #about .about-pic {
         width: 60%;
-        height: 100%;
+        height: auto;
         margin-right: 6rem;
         margin-top: 2rem;
     }
@@ -788,7 +800,11 @@ footer p {
     }
 
     #works {
-        height: 350vh;
+        height: auto;
+    }
+
+    #contact h2 {
+        margin-left: -1.5rem;
     }
 
     #works .featureWorks {
@@ -812,19 +828,41 @@ footer p {
         width: 80%;
         margin: auto;
         display: flex;
-        height: 70vh;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contact {
+        height: auto;
     }
 
     #contact .form {
         width: 100%;
-        height: 100%;
         display: flex;
-
+        align-items: center;
+        height: 50%;
     }
+
+    #contact .location h3 {
+        width: 90%;
+    }
+
+    #contact .location {
+        height: 50%;
+    }
+
+    footer {
+        margin-top: 14rem;
+    }
+
 }
 
 @media screen and (max-width:1024px) {
+    #about {
+        height: auto;
+    }
+
     #about .inner {
         flex-direction: column;
         align-items: center;
@@ -842,7 +880,7 @@ footer p {
 
     #about .about-pic {
         width: 60%;
-        height: 100%;
+        height: auto;
         margin-right: 6rem;
         margin-top: 2rem;
     }
@@ -852,7 +890,7 @@ footer p {
     }
 
     #works {
-        height: 350vh;
+        height: auto;
     }
 
     #works .featureWorks {
@@ -872,6 +910,10 @@ footer p {
         display: flex;
     }
 
+    #contact {
+        height: auto;
+    }
+
     #contact .contact-me p {
         width: 100%;
     }
@@ -880,11 +922,8 @@ footer p {
         width: 90%;
     }
 
-    #contact .location {
-        margin: 3.9rem;
+    #contact .location h3 {
+        width: 90%;
     }
 
-    #contact {
-        height: 150vh;
-    }
 }
