@@ -20,7 +20,7 @@
             <a class="active" href="#about"> About</a>
             <a href="#works">Work</a>
             <a href="#contact">Contact</a>
-            <a href="#" class="resume">Resume</a>
+            <a href="assets/DeemaIsleemCV.pdf" class="resume" target="_blank">Resume</a>
         </nav>
     </header>
     <!-- End Header Section -->
@@ -134,7 +134,7 @@
     <section id="contact">
         <h2>Contact</h2>
         <div class="contact-wrapper">
-            <div class="form">
+            <div class="form" role="form">
                 <form>
                     <div class="labels">
                         <label for="name" class="name">Name</label>
@@ -143,11 +143,11 @@
 
                     <div class="inputWrapper">
 
-                        <input type="text" id="name" name="name" placeholder="Enter your name" />
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
-                        <input type="email" id="email" name="email" placeholder="Enter your email" />
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required />
                     </div>
-                    <textarea placeholder="Enter your message" name="message"></textarea>
+                    <textarea placeholder="Enter your message" name="message" required></textarea>
                     <button id="btn" type="submit"><i class="fa fa-paper-plane"></i></button>
                 </form>
             </div>
@@ -164,15 +164,25 @@
                     FIND ME <br />
                     Feel free to connect with me!
                 </h3>
-
-
-
             </div>
 
         </div>
     </section>
     <!-- End Contact Section -->
     <!-- Start Footer Section -->
+    <footer>
+        <ul class="socialIcons">
+            <li><a href="https://github.com/dee2323" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/deemaisleem" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a target="_blank" href="mailto:deemasleem1@gmail.com"><i class="fa-brands fa-google"></i></a></li>
+            <li><a target="_blank"
+                    href="https://www.facebook.com/people/%D8%AF%D9%8A%D9%85%D8%A9-%D8%B3%D9%84%D9%8A%D9%85/100018442142873/"><i
+                        class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+        <p>Designed & Developed by Deema Saleem &#169; 2022</p>
+
+    </footer>
     <!-- End Footer Section -->
 
 

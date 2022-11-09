@@ -12,7 +12,7 @@
 }
 
 span::selection,
-button::selection,
+button a::selection,
 h2::selection,
 #contact .contact-me p::selection {
     background-color: white;
@@ -26,13 +26,6 @@ section {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: #5f81ad;
-    font-weight: 800;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2.5px;
-}
 
 /* End General Setting */
 /* Start Navbar */
@@ -130,10 +123,11 @@ a {
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
+    height: 90%;
 }
 
 .navbar a.resume:hover {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* Navbar links on mouse-over */
@@ -205,6 +199,14 @@ a {
     -moz-transition: all 1.5s ease 0s;
     -ms-transition: all 1.5s ease 0s;
     -o-transition: all 1.5s ease 0s;
+}
+
+#hero a {
+    text-decoration: none;
+    color: #5f81ad;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5px;
 }
 
 /* End Hero Section */
@@ -622,6 +624,66 @@ form {
 }
 
 /* End Contact section */
+/* Start footer section */
+footer {
+    background-color: rgb(5, 12, 41);
+    color: #fff;
+    padding: 1.4rem;
+    color: #5f81ad;
+    text-align: center;
+}
+
+ul.socialIcons {
+    padding: 0;
+    text-align: center;
+}
+
+.socialIcons li {
+    list-style: none;
+    display: inline-block;
+    margin: .4rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    background-color: rgb(5, 12, 41);
+    box-shadow: 0 0 12px #5f81ad;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+
+.socialIcons li a {
+    display: block;
+    padding: 0.5rem;
+    min-width: 2rem;
+    max-width: 2rem;
+    height: 2rem;
+    white-space: nowrap;
+    transition: 0.8s;
+    text-decoration: none;
+    font-family: arial;
+    color: #5f81ad;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+.socialIcons li i {
+    margin-right: 0.5em;
+}
+
+.socialIcons li:hover a {
+    padding-top: .3em;
+}
+
+footer p {
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* End footer section */
 @media screen and (max-width: 500px) {
     #about .inner {
         flex-direction: column;
