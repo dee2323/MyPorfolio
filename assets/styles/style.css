@@ -23,7 +23,7 @@ h2::selection,
 }
 
 section {
-    height: 100vh;
+
     position: relative;
     color: #fff;
     background-color: rgb(5, 12, 41);
@@ -257,6 +257,29 @@ section {
     border-bottom-right-radius: 12rem;
     box-shadow: 0px 8px 15px #5f81ad;
     transition: 1.5s;
+}
+
+#about .inner .about-text i {
+    display: inline-block;
+    color: #5f81ad;
+    padding: .5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#about .inner .about-text span {
+    color: #5f81ad;
+}
+
+#about .inner .about-text p i :hover i {
+    display: inline-block;
+    transition: 1s;
+    font-size: 2rem;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    color: red;
 }
 
 #about .inner .about-text:hover {
