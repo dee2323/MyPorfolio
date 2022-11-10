@@ -1,10 +1,20 @@
 /* General setting */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+    background: rgb(5, 12, 41);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5f81ad;
+    -webkit-border-radius: 1ex;
 }
 
 body {
@@ -709,144 +719,16 @@ footer p {
 
 /* End footer section */
 @media screen and (max-width: 500px) {
-    #about .inner {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about .inner .about-text {
-        width: 100%;
-        height: 70%;
-        font-size: .7rem;
-    }
-
-    #about .about-pic:hover {
-        margin-top: 1.2rem;
-    }
-
-    #about .about-pic {
-        width: 60%;
-        height: 100%;
-        margin-right: 6rem;
-        margin-top: 2rem;
-    }
-
-    #about .inner {
-        height: 90vh;
-    }
-
-    .navbar a {
-        float: none;
-        display: block;
-    }
-
     #hero h1 {
         margin-left: 5rem;
     }
 
-    .navbar .logo a {
-        display: none;
-    }
-
-    #works {
-        height: auto;
-    }
-
-    #works .featureWorks {
-        flex-direction: column;
-    }
-
-    #works .featureWorks .container {
-        width: 80%;
-        margin: auto;
-        margin-bottom: 1.6rem;
-    }
-
-    #works .featureWorks .container .text {
-        line-height: 1.5;
-        font-size: 1rem;
-        flex-direction: column;
-        display: flex;
-    }
-
-    #contact h2 {
-        margin-left: -1.5rem;
-    }
-
-    #contact .contact-wrapper {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        /* height: 70vh; */
-        flex-direction: column;
-    }
-
-    #contact .form {
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
-
-    #contact .location h3 {
-        width: 90%;
+    .navbar a.resume {
+        margin-right: -2rem;
     }
 }
 
 @media screen and (max-width: 760px) {
-    #about {
-        height: auto;
-    }
-
-    #about .inner {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about .inner .about-text {
-        width: 100%;
-        font-size: .7rem;
-    }
-
-    #about .about-pic:hover {
-        margin-top: 1.2rem;
-    }
-
-    #about .about-pic {
-        width: 60%;
-        height: auto;
-        margin-right: 6rem;
-        margin-top: 2rem;
-    }
-
-    #about .inner {
-        height: 90vh;
-    }
-
-    #works {
-        height: auto;
-    }
-
-    #contact h2 {
-        margin-left: -1.5rem;
-    }
-
-    #works .featureWorks {
-        flex-direction: column;
-    }
-
-    #works .featureWorks .container {
-        width: 80%;
-        margin: auto;
-        margin-bottom: 1.6rem;
-    }
-
-    #works .featureWorks .container .text {
-        line-height: 1.5;
-        font-size: 1rem;
-        flex-direction: column;
-        display: flex;
-    }
-
     #contact .contact-wrapper {
         width: 80%;
         margin: auto;
@@ -856,19 +738,11 @@ footer p {
         align-items: center;
     }
 
-    #contact {
-        height: auto;
-    }
-
     #contact .form {
         width: 100%;
         display: flex;
         align-items: center;
         height: 50%;
-    }
-
-    #contact .location h3 {
-        width: 90%;
     }
 
     #contact .location {
